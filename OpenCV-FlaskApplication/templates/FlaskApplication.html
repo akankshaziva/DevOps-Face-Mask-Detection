@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<style>
+    .me {
+    float: right;
+    clear: right;
+}
+pads{
+ padding-top:100px;
+ padding-right: 50px;
+ }
+</style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Flask Apps</title>
+  </head>
+  <body style="background-color:#15B79E";>
+
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="color: aliceblue;">
+               <h1 style="text-align:center;">Face Mask Detection</h1>
+        </a>
+        </div>
+      </nav><br><br>
+<div>
+     <img src="{{ url_for('video') }}" width="50%" align="left"/>
+     <h2 style="text-align:right; padding-right:200px";>Please Follow the Covid Instruction</h2>
+     <p style="text-align:right; font-size:25px ; padding-right:340px";>1.Please wear your mask properly</p>
+     <p style="text-align:right; font-size:25px;padding-right:450px";>2.Please use a sanitizer</p>
+     <p style="text-align:right; font-size:25px; padding-right:400px";>3.Maintain social distancing</p>
+     <img src="{{ url_for('static',filename='imagecovid.png')}}"  width="700" height="450" align="right">
+</div>
+</body>
+</html>
